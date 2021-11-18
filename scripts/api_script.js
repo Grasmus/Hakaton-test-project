@@ -2,9 +2,7 @@ const form =  document.getElementById('startingForm');
 form.addEventListener('submit', async function (event)
 {
    // event.preventDefault();
-   API ='https://quizapi.io/api/v1/questions?apiKey=J35Z0YLOZ6U7Vf2THXXQe8FbRRvvq9FEOmHFgQO4';
-   
-
+    API ='https://quizapi.io/api/v1/questions?apiKey=J35Z0YLOZ6U7Vf2THXXQe8FbRRvvq9FEOmHFgQO4';
     difficultyList = document.getElementById('selectDifficulty');
     difficultyIndex = difficultyList.selectedIndex;
     difficulty = difficultyList[difficultyIndex].value;
@@ -36,6 +34,4 @@ form.addEventListener('submit', async function (event)
     }
 }
     localStorage.setItem("API", API);
-   
 })
-
