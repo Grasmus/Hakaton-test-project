@@ -13,7 +13,7 @@ async function main()
 if(typeof(Storage) !== 'undefined')
 {
     API = localStorage.getItem("API");
-    alert(API);
+   // alert(API);
     let response = await fetch(API);
     questions = await response.json();
     printQuiz(questions, 0);
