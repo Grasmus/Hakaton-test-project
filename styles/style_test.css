@@ -5,14 +5,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 500px;
+    height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #272B3A;
-    margin: 1%;
+    margin-bottom: 2%;
     color: white;
     border-style: hidden;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 2vh;
+    padding: auto;
 }
 .button:hover
 {
@@ -28,13 +29,27 @@ button:nth-child(even)
 #title
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    margin: 1%;
+    font-size: 5vh;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    color: white;
 }
 body
 {
-    height: 100%;
-    padding-top: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 95vh;
+   background-image: url('../back2.gif');
+   background-size: cover;
+}
+
+#buttons
+{
+    margin:0, 25%, 25%, 25%;
+    width: 70%; 
     display: flex;
     flex-direction: column;
     align-items: center;

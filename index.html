@@ -7,34 +7,7 @@
 </head>
 
 <body>
-    <div class="seldiv">
-        <form id="startingForm" action="test.html">
-        <label> 1) Оберіть рівень важкості питань </label>
-          <select  class="border-radius" name="Difficulty" id="selectDifficulty">
-              <option>easy</option>
-              <option>medium</option>
-              <option>hard</option>
-          </select><br>
-          
-          <hr>
-          <br>
-          <label>2) Оберіть категорію питань </label>
-          <select class="border-radius" name="Category" id="selectCategory">
-           <option>Linux</option>
-           <option>DevOps</option>
-           <option>Docker</option>
-       </select><br>
-       <hr>
-       <br>
-          <label for="numOfQuestions"> 3) Кількість питань:</label>
-          <input  class="border-radius" type="text" id="numOfQuestions" name="numOfQuestions"><br>
-          <hr>
-          <br>
-   <br>
-          <input class="button_Start" type="submit" id="startButton" value="Start">
-      </form>
-   </div>
-<div>
+   
     <div class="block">
     <div class="block_skills">
         <div class="container1">
@@ -75,6 +48,30 @@
 </div>
 </div>
 </div>
+<div class="seldiv">
+    <form id="startingForm" action="test.html">
+    <label> 1) Оберіть рівень важкості питань </label>
+      <select  class="border-radius" name="Difficulty" id="selectDifficulty">
+          <option>easy</option>
+          <option>medium</option>
+          <option>hard</option>
+      </select>
+      
+
+      <label>2) Оберіть категорію питань </label>
+      <select class="border-radius" name="Category" id="selectCategory">
+       <option>Linux</option>
+       <option>DevOps</option>
+       <option>Docker</option>
+   </select>
+
+      <label for="numOfQuestions"> 3) Кількість питань:</label>
+      <input  class="border-radius"  type="number" min="1" max="20" id="numOfQuestions" name="numOfQuestions"><br>
+
+  <input class="button_Start" type="submit" id="startButton" value="Start">
+  </form>
+</div>
+<div>
 </body>
 <script src="scripts/api_script.js"></script>
 <script src="scripts/progrs_bar.js"></script>
