@@ -184,6 +184,7 @@ function printQuiz(questions, i)
 {
     //alert(questions.length);
     //alert(questions[0].answers.answer_a);
+    //alert(questions[i].category);
     if(i != 0) div.parentNode.removeChild(div);
     div = document.createElement('div');
     div.setAttribute("id", "buttons");
