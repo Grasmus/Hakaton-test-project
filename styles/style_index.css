@@ -1,6 +1,6 @@
 .diagram {
-    width: 20vh;
-    height:20vh;
+    width: 10vh;
+        height: 10vh;
     border-radius: 50%;
     background: #FC493E;
     position: relative;
@@ -66,7 +66,7 @@
 }
 .text {
     position: absolute;
-    font-size: 2vw;
+    font-size: 4vw;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 3;
     top: 0;
@@ -89,13 +89,13 @@
 .block{
     width:80%;
     align-items: center;
-    margin: auto;
+   
 }
 .seldiv {
 
   background: #272B3A;
  
-  width: 66vh;
+  width: 66%;
   border-radius:40px;
   padding:4vh;
   font-size:22px;
@@ -103,6 +103,8 @@
    align-items: center;
     
 }
+
+
 
 #startingForm
 {
@@ -117,11 +119,11 @@
   appearance:none;
   -webkit-appearance:none;
   /* usual styles */
-  padding:10px;
+  padding:2px;
   border:none;
   background-color:#FC493E;
   color:#fff;
-  font-size: 3vh;
+  font-size: 2vh;
   border-radius:5px;
   width:100%;
  
@@ -132,24 +134,24 @@
 #selectCategory{
 
     width: 100%;
-    padding:5px;
+    padding:0;
     margin: 1vh, 0, 1vh, 0;
     border-radius:10px;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     text-align: center;
 }
 #selectDifficulty{
     width: 100%;
-    padding:5px;
+    padding:0;
     margin: 1vh, 0, 1vh, 0;
     border-radius:10px;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     text-align: center;
 }
 #numOfQuestions{
-    width: 97%;
-    padding:5px;
-    font-size: 2.5vh;
+    width: 99%;
+    padding:0;
+    font-size: 1.5vh;
     border-radius:10px;
     text-align: center;
 }
@@ -157,7 +159,7 @@
 label
 {
     margin: 10px;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 label:first-child
@@ -166,9 +168,134 @@ label:first-child
 }
 body
 {
+    height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../back2.gif');
+    background-image: url('../back1.gif');
     background-size: cover;
+}
+
+@media (min-width: 400px)  
+{
+    .text {
+        font-size: 3vw;
+    }
+    .diagram {
+        width: 12vh;
+            height: 12vh;
+    }
+    label
+{
+    margin: 10px;
+    font-size: 1.5vh;
+}
+#selectCategory{
+
+    padding:0;
+
+    font-size: 1.5vh;
+
+}
+#selectDifficulty{
+  
+    padding:0;
+
+
+    font-size: 1.5vh;
+
+}
+#numOfQuestions{
+     padding:0;
+    font-size: 1.5vh;
+
+}
+.button_Start{
+    padding: 5px;
+    font-size: 2vh;
+}
+
+}
+
+@media (min-width: 700px)  
+{
+    .text {
+        font-size: 3vw;
+    }
+    .diagram {
+        width: 15vh;
+        height: 15vh;
+    }
+    label
+{
+    margin: 10px;
+    font-size: 2vh;
+}
+#selectCategory{
+
+    padding:2px;
+
+    font-size: 2vh;
+
+}
+#selectDifficulty{
+  
+    padding:2px;
+
+
+    font-size: 2vh;
+
+}
+#numOfQuestions{
+     padding:2px;
+    font-size: 2vh;
+
+}
+.button_Start{
+    padding: 7px;
+    font-size: 2.5vh;
+}
+}
+@media (min-width: 1080px)  
+{
+    .seldiv {
+     width: 33%;
+    }
+    .diagram {
+        width: 20vh;
+        height: 20vh;
+    }
+    .text {
+        font-size: 2vw;
+    }
+    label
+{
+    margin: 10px;
+    font-size: 2.5vh;
+}
+#selectCategory{
+
+    padding:5px;
+
+    font-size: 2.5vh;
+
+}
+#selectDifficulty{
+  
+    padding:5px;
+
+
+    font-size: 2.5vh;
+
+}
+#numOfQuestions{
+     padding:5px;
+    font-size: 2.5vh;
+
+}
+.button_Start{
+    padding: 10px;
+    font-size: 3vh;
+}
+
 }
