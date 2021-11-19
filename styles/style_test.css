@@ -1,0 +1,18 @@
+.button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #272B3A;
+    margin: 1%;
+    color: white;
+    border-style: hidden;
+}
+
+#title
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}

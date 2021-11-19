@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
-    <link rel="stylesheet" href="styles/style_one.css">
-    <link rel="stylesheet" href="styles/circle.css">
+    <link rel="stylesheet" href="styles/style_index.css">
 </head>
+
 <body>
-<div>
-     <form id="startingForm" action="test.html">
-       <select name="Difficulty" id="selectDifficulty">
-           <option>easy</option>
-           <option>medium</option>
-           <option>hard</option>
+    <div class="seldiv">
+        <form id="startingForm" action="test.html">
+        <label> 1) Оберіть рівень важкості питань </label>
+          <select  class="border-radius" name="Difficulty" id="selectDifficulty">
+              <option>easy</option>
+              <option>medium</option>
+              <option>hard</option>
+          </select><br>
+          
+          <hr>
+          <br>
+          <label>2) Оберіть категорію питань </label>
+          <select class="border-radius" name="Category" id="selectCategory">
+           <option>Linux</option>
+           <option>DevOps</option>
+           <option>Docker</option>
        </select><br>
-       <select name="Category" id="selectCategory">
-        <option>Linux</option>
-        <option>DevOps</option>
-        <option>Networking</option>
-        <option>Programming</option>
-        <option>Cloud</option>
-        <option>Docker</option>
-        <option>Kubernetes</option>
-    </select><br>
-       <label for="numOfQuestions">Number of questions:</label>
-       <input type="text" id="numOfQuestions" name="numOfQuestions"><br>
-       <input type="submit" id="startButton" value="Start">
-   </form>
-</div>
+       <hr>
+       <br>
+          <label for="numOfQuestions"> 3) Кількість питань:</label>
+          <input  class="border-radius" type="text" id="numOfQuestions" name="numOfQuestions"><br>
+          <hr>
+          <br>
+   <br>
+          <input class="button_Start" type="submit" id="startButton" value="Start">
+      </form>
+   </div>
 <div>
     <div class="block">
     <div class="block_skills">
         <div class="container1">
-        <div class="diagram progress" data-percent="18">
+        <div class="diagram progress"  data-percent="0">
     <div class="piece left"></div>
     <div class="piece right"></div>
     <div class="text">
@@ -42,8 +48,8 @@
     </div>
 </div>
         </div>
-        <div class="container2">
-        <div class="diagram progress" data-percent="80">
+<div class="container2">
+        <div class="diagram progress"  data-percent="0">
     <div class="piece left"></div>
     <div class="piece right"></div>
     <div class="text">
@@ -53,45 +59,9 @@
         </div>
     </div>
 </div>
-        </div>
-            <div class="container3">
-        <div class="diagram progress" data-percent="18">
-    <div class="piece left"></div>
-    <div class="piece right"></div>
-    <div class="text">
-        <div>
-
-            <span>Networking</span>
-        </div>
-    </div>
 </div>
-            </div>
-                <div class="container4">
-        <div class="diagram progress" data-percent="50">
-    <div class="piece left"></div>
-    <div class="piece right"></div>
-    <div class="text">
-        <div>
-
-            <span>Programming</span>
-        </div>
-    </div>
-</div>
-                </div>
-                    <div class="container5">
-   <div class="diagram progress" data-percent="18">
-    <div class="piece left"></div>
-    <div class="piece right"></div>
-    <div class="text">
-        <div>
-
-            <span>Cloud</span>
-        </div>
-    </div>
-</div>
-                    </div>
-                        <div class="container6">
-        <div class="diagram progress" data-percent="18">
+                        <div class="container3">
+        <div class="diagram progress" data-percent="0">
     <div class="piece left"></div>
     <div class="piece right"></div>
     <div class="text">
@@ -101,25 +71,14 @@
     </div>
         </div>
         </div>
-            <div class="container7">
-                <div class="diagram progress" data-percent="18">
-                    <div class="piece left"></div>
-                    <div class="piece right"></div>
-                    <div class="text">
-                        <div>
-                            <span>Kubernetes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
-
+</div>
 </div>
 </div>
 </body>
 <script src="scripts/api_script.js"></script>
 <script src="scripts/progrs_bar.js"></script>
+<script>
+    check_localstorage();
+</script>
 </html>

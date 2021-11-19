@@ -2,7 +2,7 @@
     width: 150px;
     height:150px;
     border-radius: 50%;
-    background: #990;
+    background: #FC493E;
     position: relative;
     overflow: hidden;
 }
@@ -51,13 +51,13 @@
     transform: rotate(360deg);
 }
 .diagram .left::before {
-    background: #059;
+    background: #272B3A;
 }
 .diagram.over_50 .left::before {
-    background: #990;
+    background: #FC493E;
 }
 .diagram .right::before {
-    background: #059;
+    background: #272B3A;
 }
 .diagram .text {
     position: absolute;
@@ -89,4 +89,33 @@
     width:80%;
     align-items: center;
     margin: auto;
+}
+.seldiv {
+
+  background: #272B3A;
+  height: 300px;
+  width: 400px;
+  border-radius:40px;
+  padding:40px;
+  font-size:22px;
+  color:#fff; 
+   align-items: center;
+    margin: auto;
+}
+.button_Start{
+  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color:#FC493E;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+ 
+}
+.border-radius{
+	border-radius:5px;
 }
